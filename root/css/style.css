@@ -62,9 +62,6 @@ table {
     --lighttxt:rgba(255,255,255,0.8);
 }
 
-.wrapper {
-    /* background-color: rgba(123, 255, 0, 0.5); */
-}
 .bgred {
     background-color: rgba(255, 0, 0, 0.5);
 }
