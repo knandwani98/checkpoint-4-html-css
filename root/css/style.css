@@ -160,6 +160,10 @@ p {
     align-items: center;
 }
 
+.jend {
+    justify-content: flex-end;
+}
+
 .jbetween {
     justify-content: space-between;
 }
@@ -208,6 +212,12 @@ p {
 
 
 
+/* Shadow */
+
+.shadow {
+    box-shadow: 0 0 1rem .2rem rgba(0,0,0,0.1);
+}
+
 /* Padding */
 
 .spaceall {
@@ -235,6 +245,10 @@ p {
 
 .padbot0 {
     padding-bottom: 0 !important;
+}
+
+.padtop0 {
+    padding-top: 0 !important;
 }
 
 /* Buttons */
@@ -334,12 +348,64 @@ p {
     color: #635551;
 }
 
+.top-menu ul {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 1rem .4rem rgba(0,0,0,0.1);
+    border-radius: .6rem;
+    margin-top: -1rem;
+    padding: 1rem 0;
+}
+
+.dropdown a {
+    margin: -1rem 0 !important;
+}
+
+.deep-dropdown-menu span{
+    margin-left: 6rem;
+}
+
+.dropdown {
+    display: none;
+}
+
+.deep-dropdown {
+    position: absolute;
+    top: 5rem;
+    right: -8.8rem;
+    display: none;
+    overflow: hidden;
+}
+
+
+.dropdown-menu:hover ~ .dropdown {
+    display: block;
+}
+.dropdown:hover {
+    display: block;
+}
+
+
+
+/* Deep Drop Down Menu */
+
+
+.deep-dropdown-menu:hover ~ .deep-dropdown {
+    display: block;
+}
+.deep-dropdown:hover {
+    display: block;
+}
+
+
+
 /* Banner */
 
 .banner {
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../media/hero-bg.jpg) center no-repeat;
     background-size: cover;
     color: white;
+    width: 100%;
     height: 70vh;
     background-attachment: fixed;
 }
@@ -1107,52 +1173,80 @@ form .form-box::placeholder {
     z-index: 99999;
 }
 
-.top-menu ul {
-    position: absolute;
+/* Blogg Page */
+
+.breadcrumb li {
+    font-size: 1.3rem;
+    display: inline;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.breadcrumb li + li::before {
+    padding: .3rem;
+    color: var(--primary);
+    content: "/\00a0";
+}
+
+.breadcrumb li a {
+    color: var(--accent);
+}
+
+
+.blog-page h1 {
+    font-size: 2.4rem;
+    padding-top: 0.8rem;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.art-header {
+    background-color: #F4F2F2;
+}
+
+.blog-page .blog article .txt {
+    padding: 1.8rem;
+}
+
+.blog-page .blog article span {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    color: var(--txt);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blog-page .blog article span i {
+    margin-right: .4rem;
+}
+
+.blog-page .blog article .btn {
+    background-color: var(--accent);
+    font-size: 1.3rem;
+    padding: .6rem 2rem;
+}
+.blog-page .blog article .space20 {
+    padding-top: 1.6rem;
+}
+
+.blog-page .blog article {
+    margin-bottom: 5rem;
+}
+
+.indicator {
+    padding-bottom: 1.6rem;
+}
+
+.indicator a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 4rem;
+    height: 4rem;
     background-color: white;
-    box-shadow: 0 0 1rem .4rem rgba(0,0,0,0.1);
-    border-radius: .6rem;
-    margin-top: -1rem;
-    margin-left: -1.6rem;
-    padding: 1rem 0;
-}
-
-.dropdown a {
-    margin: -1rem 0!important;
-}
-
-.deep-dropdown-menu span{
-    margin-left: 8rem;
-}
-
-.dropdown {
-    display: none;
-}
-
-.deep-dropdown {
-    position: absolute;
-    top: 2.6rem;
-    right: -16rem;
-    display: none;
-}
-
-.dropdown-menu:hover ~ .dropdown {
-    display: block;
-}
-.dropdown:hover {
-    display: block;
-}
-.dropdown:hover ~ .dropdown-menu{
-    color: var(--accent);
-}
-
-/* Deep Drop Down Menu */
-.deep-dropdown-menu:hover ~ .deep-dropdown {
-    display: block;
-}
-.deep-dropdown:hover {
-    display: block;
-}
-.deep-dropdown:hover ~ .deep-dropdown-menu{
-    color: var(--accent);
+    border: .1rem solid rgba(0,0,0,0.1);
+    margin: 0 .4rem;
+    color: var(--txt);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
