@@ -17,7 +17,11 @@
     <header class="header">
         <div class="container flex icenter jbetween">
             <a class="logo" href="index.html">Flexor</a>
-            <nav>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
+            <nav class="menu">
                 <ul class="top-menu flex icenter jbetween">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -171,8 +175,8 @@
     </main>
     <footer class="footer">
         <section class="nav-menu space30">
-            <div class="container flex itop jbetween">
-                <div class="nav ">
+            <div class="container flex itop jbetween wrap">
+                <div class="nav">
                     <a class="logo" href="index.html">Flexor</a>
                     <div class="space10">
                         <address>
@@ -225,11 +229,11 @@
             </div>    
         </section>
         <section class="copyright">
-            <div class="container flex icenter jbetween">
-                <small>
+            <div class="container flex icenter jbetween wrap">
+                <small class="mobi100">
                     &copy; Copyright <strong style="color: var(--heading)">Flexor</strong>. All Rights Reserved <br> Designed by <span style="color: var(--accent); font-weight: 600;">BootsrapMade</span>
                 </small>
-                <nav class="social">
+                <nav class="social mobi100">
                     <ul class="flex icenter jbetween">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -239,8 +243,8 @@
                     </ul>
                 </nav>
             </div>
+            <a class="top-btn flex flex-center" href="#top"><i class="fas fa-angle-up"></i></a>
         </section>
     </footer>
-    <a class="top-btn flex flex-center" href="#top"><i class="fas fa-angle-up"></i></a>
 </body>
 </html>

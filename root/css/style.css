@@ -1459,6 +1459,11 @@ form .form-box::placeholder {
         justify-content: center;
         padding-bottom: 3rem;
     }
+
+
+    .blog-page .blog article {
+        flex: 0 1 48%;
+    }
 }
 
 
@@ -1515,6 +1520,10 @@ form .form-box::placeholder {
 
     .footer .nav-menu .nav {
         flex: 0 1 100% !important;
+    }
+
+    .blog-page .blog article {
+        flex: 0 1 100%;
     }
 
 }
