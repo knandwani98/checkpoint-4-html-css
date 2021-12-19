@@ -68,6 +68,7 @@ table {
 
 html {
     font-size: 10px;
+    /* overflow: auto; */
     scroll-behavior: smooth;
 }
 
@@ -89,7 +90,7 @@ strong {
     max-width: 1260px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    padding: 0 3rem;
 }
 
 body {
@@ -416,7 +417,7 @@ p {
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../media/hero-bg.jpg) center fixed no-repeat;
     color: white;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     padding: 12rem 0;
 }
 
@@ -1271,9 +1272,8 @@ form .form-box::placeholder {
         padding: 16rem 0;
     }
     .features {
-        position: relative;
         margin-top: -14em;
-        }
+    }
 }
 
 
@@ -1378,10 +1378,15 @@ form .form-box::placeholder {
     /* Banner */
 
     .banner {
-        padding: 14rem 0;
+        padding: 32rem 0;
     }
 
     /* Features */
+
+    .features {
+        margin-top: -24em;
+    }
+
     .features .mobi100 {
         margin-bottom: 3rem;
     }
