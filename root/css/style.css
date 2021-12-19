@@ -139,7 +139,7 @@ p {
 
 
 
-#toggle {
+#toggle, .bars {
     display: none;
 }
 
@@ -1266,6 +1266,16 @@ form .form-box::placeholder {
 
 
 
+@media screen and (max-width: 1080px) {
+    .banner {
+        padding: 16rem 0;
+    }
+    .features {
+        position: relative;
+        margin-top: -14em;
+        }
+}
+
 
 
 
@@ -1331,6 +1341,7 @@ form .form-box::placeholder {
     }
 
     .bars {
+        display: block;
         color: var(--primary);
         font-size: 2.4rem;
         position: absolute;
