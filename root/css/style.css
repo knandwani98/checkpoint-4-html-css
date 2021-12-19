@@ -1265,10 +1265,6 @@ form .form-box::placeholder {
 
 @media screen and (max-width: 768px) {
 
-    html {
-        font-size: 10px;
-    }
-
     .container {
         max-width: 708px;
         padding: 0 2rem;
@@ -1447,5 +1443,12 @@ form .form-box::placeholder {
         flex: 0 1 100% !important;
     }
 
+}
 
+
+@media screen and (max-width: 360px) {
+    .container {
+        max-width: 280px;
+        padding: 0 1rem;
+    }
 }
