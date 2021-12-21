@@ -1172,7 +1172,7 @@ form .form-box::placeholder {
 
 
 .top-btn {
-    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 1.4rem;
     background-color: var(--accent);
     width: 3rem;
@@ -1468,6 +1468,14 @@ form .form-box::placeholder {
     .blog-page .blog article {
         flex: 0 1 48%;
     }
+
+
+    .top-btn {
+        font-size: 2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    
 }
 
 
