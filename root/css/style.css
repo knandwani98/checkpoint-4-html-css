@@ -128,6 +128,12 @@ h4 {
     color: var(--heading);
 }
 
+h5 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
 p {
     font-size: 1.4rem;
     color: var(--primary);
@@ -380,7 +386,7 @@ p {
 .deep-dropdown {
     position: absolute;
     top: 5rem;
-    right: -8.8rem;
+    right: -8.6rem;
     display: none;
     overflow: hidden;
 }
@@ -469,6 +475,8 @@ p {
     background-color: white !important;
     color: var(--accent);
 }
+
+
 
 /* About */
 
@@ -850,13 +858,13 @@ blockquote {
     border-top-right-radius: .6rem;
 }
 
-.pricing .card.active header p{
+.pricing .card.active header h5{
     color: white;
 }
 
 
 
-.pricing .card p{
+.pricing .card li{
     color: var(--primary);
     font-weight: bold;
 }
@@ -889,7 +897,7 @@ blockquote {
     display: inline-block;
 }
 
-.card .details p {
+.card .details li {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary);
