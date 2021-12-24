@@ -705,7 +705,8 @@ p {
 /* Quotes */
 
 .quotes {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/testimonials-bg.jpg), no-repeat center/cover fixed;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../media/testimonials-bg.jpg), no-repeat center;
+    background-attachment: fixed;
 }
 .quotes img {
     width: 8rem;
